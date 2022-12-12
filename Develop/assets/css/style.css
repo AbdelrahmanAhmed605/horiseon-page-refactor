@@ -1,13 +1,24 @@
+/*Universal Selectors are applied to all HTML elements and in this case is used to remove browser defaults from 
+giving the webpage a different layout on different browser platforms */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/*As the body encompasses all the elements in the page, it will place a background color on the entire webpage*/
 body {
     background-color: #d9dcd6;
 }
 
+/*This element selector applies the following font size to every paragraph tag on the entire page unless another 
+styling with a higher specifity is placed*/
+p {
+    font-size: 16px;
+}
+
+/*The font family styling offers different fonts for the header tag based on what is available through the browser 
+with the sans-serif fall back option which is a default in case none of the other fonts are applicable*/
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,6 +26,8 @@ header {
     color: #ffffff;
 }
 
+/*The h1 element has its own font size but needs to be used for semantic reasons. This styling allows us to maintain
+the semantic meaning while choosing a font-size is more visually appealing*/
 header h1 {
     display: inline-block;
     font-size: 48px;
@@ -24,6 +37,8 @@ header h1 .seo {
     color: #d9dcd6;
 }
 
+/*By floating this nav to the right, all the anchor tags will be placed to the right of all elements in the header
+tag*/
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -36,6 +51,7 @@ header nav ul {
     list-style-type: none;
 }
 
+/*causing the list items in the navigation bar to be inline-block allows them to be placed on the same line*/
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
@@ -46,10 +62,7 @@ header a {
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
-}
-
+/*This is a class selector and places a background image on the webpage with a specified height and width dimension*/
 .hero {
     height: 800px;
     width: 100%;
@@ -59,12 +72,16 @@ p {
     background-position: center;
 }
 
+/*By using a percentage for the class width, we can ensure that even when we resize the browser, the content class
+will remain the bulk (75%) of the web-page display */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/*Since all the sections have the same styles, it is more readable to write it in this format rather than re-writing
+the styles for each section class individually*/
 .content section {
     margin-bottom: 20px;
     padding: 50px;
@@ -74,6 +91,8 @@ p {
     color: #ffffff;
 }
 
+/*This child selector will apply the following styles to all images in the "content" class which is an easier and 
+more readable method as opposed to styling the image in each section class individually*/
 .content img {
     max-height: 200px;
 }
@@ -83,16 +102,19 @@ p {
     font-size: 36px;
 }
 
+/*This classes places the images in the main sections to be placed to the left of all the surrounding content*/
 .float-left {
     float: left;
     margin-right: 25px;
 }
-
+/*This classes places the images in the main sections to be placed to the right of all the surrounding content*/
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/*Using the float right styling ensures that this section remains to the right of the page and maintain the semantic
+meaning of the "aside" tag it was given*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -109,6 +131,7 @@ p {
     color: #ffffff;
 }
 
+/*Making the image a block element allows it to be placed on its own line*/
 .benefits img {
     display: block;
     margin: 10px auto;
