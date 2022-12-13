@@ -11,8 +11,6 @@ body {
     background-color: #d9dcd6;
 }
 
-/*This element selector applies the following font size to every paragraph tag on the entire page unless another 
-styling with a higher specifity is placed*/
 p {
     font-size: 16px;
 }
@@ -26,8 +24,6 @@ header {
     color: #ffffff;
 }
 
-/*The h1 element has its own font size but needs to be used for semantic reasons. This styling allows us to maintain
-the semantic meaning while choosing a font-size is more visually appealing*/
 header h1 {
     display: inline-block;
     font-size: 48px;
@@ -37,7 +33,7 @@ header h1 .seo {
     color: #d9dcd6;
 }
 
-/*By floating this nav to the right, all the anchor tags will be placed to the right of all elements in the header
+/*By floating the nav to the right, all the anchor tags will be placed to the right of all elements in the header
 tag*/
 header nav {
     padding-top: 15px;
@@ -57,12 +53,13 @@ header nav ul li {
     margin-left: 25px;
 }
 
-header a {
+/*Adding the nav before the anchor tag (child selector) ensures that we are only applying the styles to the 
+links in the nav bar rather than any anchor tag that we could add in the future*/
+nav a {
     color: #ffffff;
     text-decoration: none;
 }
 
-/*This is a class selector and places a background image on the webpage with a specified height and width dimension*/
 .hero {
     height: 800px;
     width: 100%;
@@ -81,7 +78,7 @@ will remain the bulk (75%) of the web-page display */
 }
 
 /*Since all the sections have the same styles, it is more readable to write it in this format rather than re-writing
-the styles for each section class individually*/
+the styles for each section class individually (ex: .social-media-marketing{}, online-reputation-management{})*/
 .content section {
     margin-bottom: 20px;
     padding: 50px;
@@ -97,17 +94,17 @@ more readable method as opposed to styling the image in each section class indiv
     max-height: 200px;
 }
 
+/*Same reasoning as applied to the ".content img" selector above. We do not want to repeat CSS code */
 .content h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-/*This classes places the images in the main sections to be placed to the left of all the surrounding content*/
 .float-left {
     float: left;
     margin-right: 25px;
 }
-/*This classes places the images in the main sections to be placed to the right of all the surrounding content*/
+
 .float-right {
     float: right;
     margin-left: 25px;
@@ -126,6 +123,8 @@ meaning of the "aside" tag it was given*/
     background-color: #2589bd;
 }
 
+/*Same reasoning applied as the comment for the ".contents section" selector. We want to minimize that amount of 
+code written and prevent repeated code*/
 .benefits section {
     margin-bottom: 32px;
     color: #ffffff;
@@ -143,6 +142,8 @@ meaning of the "aside" tag it was given*/
     text-align: center;
 }
 
+/*Removed the .footer class and replaced it with just the footer element as the footer class will provide no added
+benefits since a footer can only appear once on a page anyways*/
 footer {
     padding: 30px;
     clear: both;
