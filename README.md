@@ -9,7 +9,7 @@ N/A
 
 ## Usage
 
-The link to the website can be found here: https://github.com/AbdelrahmanAhmed605/horiseon-webpage-refactor
+The link to the website can be found here: https://abdelrahmanahmed605.github.io/horiseon-webpage-refactor/
 
 To use Horiseon's website, you can review the descriptions for each of their provided services. For quick access to see the section containing each services, a navigation bar is provided at the top of the page. Clicking on any of the links will take the user to the corresponding section of the webpage. Throughout the webpage, there is a sidebar section to the right of the webpage showcasing supplementary information that is beneficial to the user.
 
