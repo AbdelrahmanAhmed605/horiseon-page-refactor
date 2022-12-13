@@ -15,8 +15,6 @@ p {
     font-size: 16px;
 }
 
-/*The font family styling offers different fonts for the header tag based on what is available through the browser 
-with the sans-serif fall back option which is a default in case none of the other fonts are applicable*/
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -47,7 +45,6 @@ header nav ul {
     list-style-type: none;
 }
 
-/*causing the list items in the navigation bar to be inline-block allows them to be placed on the same line*/
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
@@ -130,7 +127,6 @@ code written and prevent repeated code*/
     color: #ffffff;
 }
 
-/*Making the image a block element allows it to be placed on its own line*/
 .benefits img {
     display: block;
     margin: 10px auto;
@@ -142,8 +138,6 @@ code written and prevent repeated code*/
     text-align: center;
 }
 
-/*Removed the .footer class and replaced it with just the footer element as the footer class will provide no added
-benefits since a footer can only appear once on a page anyways*/
 footer {
     padding: 30px;
     clear: both;
