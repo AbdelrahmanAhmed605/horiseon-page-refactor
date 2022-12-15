@@ -6,7 +6,6 @@ giving the webpage a different layout on different browser platforms */
     margin: 0;
 }
 
-/*As the body encompasses all the elements in the page, it will place a background color on the entire webpage*/
 body {
     background-color: #d9dcd6;
 }
@@ -66,16 +65,17 @@ nav a {
     background-position: center;
 }
 
-/*By using a percentage for the class width, we can ensure that even when we resize the browser, the content class
-will remain the bulk (75%) of the web-page display */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* All .content selectors were moved above the .benefits selectors to make the css file follow the 
+chronological order of the html file*/
+
 /*Since all the sections have the same styles, it is more readable to write it in this format rather than re-writing
-the styles for each section class individually (ex: .social-media-marketing{}, online-reputation-management{})*/
+the styles for each section class individually (ie: .social-media-marketing{}, online-reputation-management{})*/
 .content section {
     margin-bottom: 20px;
     padding: 50px;
@@ -120,8 +120,9 @@ meaning of the "aside" tag it was given*/
     background-color: #2589bd;
 }
 
-/*Same reasoning applied as the comment for the ".contents section" selector. We want to minimize that amount of 
+/*Same reasoning applied as the comment for the ".contents section, img, heading" selectors. We want to minimize that amount of 
 code written and prevent repeated code*/
+
 .benefits section {
     margin-bottom: 32px;
     color: #ffffff;
